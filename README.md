@@ -2,7 +2,7 @@
 
 A playful food-delivery experience with a twist: place an order, follow your driver, receive the delivery notification, and discover how much money and how many calories you saved.
 
-![DashLess app screenshot](public/dashless-screenshot.png)
+![DashLess fast-food storefront](public/screenshots/home.png)
 
 ## Live demo
 
@@ -17,6 +17,20 @@ A playful food-delivery experience with a twist: place an order, follow your dri
 - Delivery notification and an instant demo fast-forward
 - Personalized calories-and-money-saved reveal
 - Responsive mobile and desktop layouts
+
+## The experience
+
+### Browse the menu
+
+![DashLess restaurant menu](public/screenshots/menu.png)
+
+### Track the driver
+
+![DashLess order tracking](public/screenshots/tracking.png)
+
+### See what you saved
+
+![DashLess savings reveal](public/screenshots/savings.png)
 
 ## Built with
 
@@ -37,4 +51,4 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 ## Disclaimer
 
-DashLess is an independent concept project. It is not affiliated with or endorsed by DoorDash or any restaurant shown in the demo.
+DashLess is an independent concept project. It is not affiliated with or endorsed by DoorDash, Jollibee, McDonald’s, Wingstop, Popeyes, Taco Bell, Shake Shack, or any other restaurant shown in the demo.
