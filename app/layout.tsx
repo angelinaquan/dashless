@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://dashless-delivery.angelinaquan2024.chatgpt.site'),
+  metadataBase: new URL('https://dashless.angelinaquan.com'),
   title: 'DashLess — Delivery with a twist',
   description: 'A playful food delivery experience that celebrates what you save.',
   openGraph: {

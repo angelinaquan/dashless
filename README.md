@@ -6,7 +6,7 @@ A playful food-delivery experience with a twist: place an order, follow your dri
 
 ## Live demo
 
-[Open DashLess](https://dashless-delivery.angelinaquan2024.chatgpt.site)
+[Open DashLess](https://dashless.angelinaquan.com)
 
 ## Features
 
