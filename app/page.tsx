@@ -28,22 +28,22 @@ type View = 'home' | 'menu' | 'checkout' | 'tracking' | 'saved';
 type CartItem = { id: string; name: string; description: string; price: number; calories: number; image: string; qty: number };
 
 const restaurants = [
-  { name: 'Sweetgreen', type: 'Salads · Healthy · Bowls', time: '22 min', fee: '$0 delivery fee', rating: '4.8', image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=85' },
-  { name: 'Mendocino Farms', type: 'Sandwiches · Salads · Lunch', time: '28 min', fee: '$0 delivery fee', rating: '4.7', image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=85' },
-  { name: 'CAVA', type: 'Mediterranean · Bowls · Healthy', time: '19 min', fee: '$1.49 delivery fee', rating: '4.9', image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85' },
-  { name: 'Tender Greens', type: 'American · Bowls · Chicken', time: '31 min', fee: '$0 delivery fee', rating: '4.6', image: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=1200&q=85' },
-  { name: 'The Kebab Shop', type: 'Mediterranean · Wraps · Bowls', time: '25 min', fee: '$0 delivery fee', rating: '4.8', image: 'https://images.unsplash.com/photo-1530469912745-a215c6b256ea?auto=format&fit=crop&w=1200&q=85' },
-  { name: 'Blue Barn', type: 'Salads · Sandwiches · Local', time: '35 min', fee: '$2.49 delivery fee', rating: '4.7', image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85' },
+  { name: 'Jollibee', type: 'Fried Chicken · Burgers · Filipino', time: '22 min', fee: '$0 delivery fee', rating: '4.8', image: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1200&q=85' },
+  { name: "McDonald's", type: 'Burgers · Fries · Late Night', time: '18 min', fee: '$0 delivery fee', rating: '4.7', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=85' },
+  { name: 'Wingstop', type: 'Wings · Chicken · Fries', time: '27 min', fee: '$1.49 delivery fee', rating: '4.6', image: 'https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=1200&q=85' },
+  { name: 'Popeyes', type: 'Fried Chicken · Sandwiches · Biscuits', time: '24 min', fee: '$0 delivery fee', rating: '4.7', image: 'https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=1200&q=85' },
+  { name: 'Taco Bell', type: 'Tacos · Burritos · Late Night', time: '20 min', fee: '$0 delivery fee', rating: '4.5', image: 'https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1200&q=85' },
+  { name: 'Shake Shack', type: 'Burgers · Shakes · Fries', time: '31 min', fee: '$2.49 delivery fee', rating: '4.8', image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=85' },
 ];
 
 const menuItems: Omit<CartItem, 'qty'>[] = [
-  { id: 'harvest', name: 'Harvest Bowl', description: 'Roasted chicken, warm wild rice, sweet potato, apples, goat cheese, almonds, balsamic vinaigrette', price: 15.95, calories: 705, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85' },
-  { id: 'crispy', name: 'Crispy Rice Bowl', description: 'Blackened chicken, crispy rice, cabbage, carrots, cilantro, spicy cashew dressing', price: 16.45, calories: 650, image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85' },
-  { id: 'kale', name: 'Kale Caesar', description: 'Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, caesar dressing', price: 14.95, calories: 515, image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=85' },
-  { id: 'miso', name: 'Miso Glazed Salmon', description: 'Miso salmon, avocado, cucumbers, basil, crispy rice and sesame ginger dressing', price: 18.95, calories: 780, image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=85' },
+  { id: 'chicken', name: 'Crispy Chicken Meal', description: 'Two pieces of crispy fried chicken, seasoned fries, buttery biscuit, gravy, and a cold drink', price: 13.99, calories: 1240, image: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=900&q=85' },
+  { id: 'burger', name: 'Double Cheeseburger Combo', description: 'Two beef patties, melted American cheese, pickles, onions, special sauce, fries, and a drink', price: 12.49, calories: 1380, image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85' },
+  { id: 'wings', name: '10 Piece Wings', description: 'Ten crispy wings tossed in your choice of sauce with seasoned fries and ranch', price: 17.95, calories: 1560, image: 'https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=900&q=85' },
+  { id: 'tacos', name: 'Crunchy Taco Party Pack', description: 'Six crunchy beef tacos loaded with lettuce, shredded cheese, hot sauce, and nacho fries', price: 15.49, calories: 1710, image: 'https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=900&q=85' },
 ];
 
-const categories = ['All', 'Healthy', 'Salads', 'Bowls', 'Sandwiches', 'Mediterranean'];
+const categories = ['All', 'Fried Chicken', 'Burgers', 'Wings', 'Tacos', 'Late Night'];
 
 function Brand() {
   return <button className="flex items-center gap-2 text-[21px] font-black tracking-[-1px] text-[#eb1700]"><span className="grid size-8 place-items-center rounded-full bg-[#eb1700] text-white"><Bike className="size-[19px]" /></span>DASHLESS</button>;
